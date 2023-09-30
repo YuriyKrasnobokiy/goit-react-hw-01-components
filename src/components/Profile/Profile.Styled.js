@@ -10,7 +10,7 @@ export const Container = styled.div`
   /* font-size: 14px; */
   font-family: sans-serif;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto 0;
 `;
 
 export const Descr = styled.div`
