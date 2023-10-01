@@ -5,7 +5,7 @@ export const FriendList = ({ friends }) => (
   <FriendsList>
     {friends.map(({ id, name, avatar, isOnline }) => (
       <FriendsListItem
-        id={id}
+        key={id}
         name={name}
         avatar={avatar}
         isOnline={isOnline}
