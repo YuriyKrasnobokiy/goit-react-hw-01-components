@@ -1,10 +1,9 @@
 import styled from 'styled-components';
+import { generateRandomColor } from '../../utils/functions';
 
 export const Section = styled.section`
   padding: 20px 0;
   text-align: center;
-  /* width: 300px; */
-  /* margin: 0 auto; */
 `;
 export const Stats = styled.ul`
   list-style: none;
@@ -17,19 +16,10 @@ export const StatsItem = styled.li`
   flex-direction: column;
   padding: 10px;
   text-align: center;
+  min-width: 60px;
   background-color: ${generateRandomColor};
 `;
 
 export const Title = styled.h2`
   margin-bottom: 10px;
 `;
-
-function generateRandomColor() {
-  const red = Math.floor(Math.random() * 256);
-  const green = Math.floor(Math.random() * 256);
-  const blue = Math.floor(Math.random() * 256);
-
-  const color = `rgb(${red}, ${green}, ${blue})`;
-
-  return color;
-}
